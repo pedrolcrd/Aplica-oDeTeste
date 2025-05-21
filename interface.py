@@ -4,7 +4,7 @@ import os
 def main():
     base = os.getenv("API_URL", "http://localhost:8000")
     while True:
-        print("\n1. Listar itens\n2. Criar item\n0. Sair")
+        print("\n1. Listar itens\n2. Criar\n0. Sair")
         opt = input("Escolha uma opção: ")
         if opt == "0":
             break
