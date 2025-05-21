@@ -45,13 +45,3 @@ jobs:
       run: |
         coverage run -m pytest
         coverage xml
-
-    - name: Rodar SonarQube Scanner
-      uses: sonarsource/sonarqube-scan-action@v1.0.0
-      with:
-        args: >
-          -Dsonar.projectKey=meu-projeto-python
-          -Dsonar.python.coverage.reportPaths=coverage.xml
-      env:
-        SONAR_TOKEN: ${{ secrets.8b93123df3b651400e1afa4414b46a50d78c85c5 }}
-        SONAR_HOST_URL: http://localhost:9000
