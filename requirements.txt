@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pytest
+pytest-anyio
+httpx
+motor
+requests
+dotenv
